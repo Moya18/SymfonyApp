@@ -1,0 +1,27 @@
+when docker fails: https://github.com/docker/for-linux/issues/517
+
+Composer:
+sudo apt-get update
+sudo apt-get install curl
+sudo curl -s https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+
+Symfony:
+sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
+sudo chmod a+x /usr/local/bin/symfony
+
+php app/console server:run
+
+1.- sudo dockerd
+2.- sudo docker build my_image .
+3.- sudo docker images (get image id)
+4.- sudo docker run <image id>
+5.- sudo docker ps
+6.- sudo docker exec -it <container id> bash
+7.- install composer and symfony
+8.- composer install
+9.- php app/console server:run
+
+
+php bin/console server:run
+
