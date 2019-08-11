@@ -1,0 +1,9 @@
+web/bundles/
+.idea/
+app/bootstrap.php.cache
+app/cache/*
+app/logs/*
+app/phpunit.xml
+build/
+vendor/
+bin/
